@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="460dp"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/custom_dialog_ihbar_detay_bg">
+
+            <ImageView
+                android:id="@+id/customDialog_imageView"
+                android:layout_width="300dp"
+                android:layout_height="185dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_Sabit1"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customDialog_imageView"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:text="Kart Sahibi"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_Sabit2"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@id/customDialog_textView_Sabit1"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:text="Öğrenci Numarası"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_Sabit3"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@id/customDialog_textView_Sabit2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:text="Kartın Bırakıldığı Birim"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_IkıNokta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@id/customDialog_imageView"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/customDialog_textView_Sabit1"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_IkıNokta2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@id/customDialog_textView_Sabit1"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/customDialog_textView_Sabit2"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_IkıNokta3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customDialog_textView_Sabit2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/customDialog_textView_Sabit3"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_AdSoyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customDialog_imageView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/customDialog_textView_IkıNokta1"
+                android:text="Melih Çolak"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_OgrNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customDialog_textView_AdSoyad"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/customDialog_textView_IkıNokta2"
+                android:text="203302057"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/customDialog_textView_Birim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customDialog_textView_OgrNo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/customDialog_textView_IkıNokta3"
+                android:text="Yemekhane"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp">
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:src="@drawable/ic_kapat"
+                android:id="@+id/custom_dialog_ihbar_detay_btnKapat"
+                android:background="@drawable/custom_dialog_ihbar_detay_kapat_btn_bg"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUKKB"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

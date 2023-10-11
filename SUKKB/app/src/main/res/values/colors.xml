@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Kayıt Ol Activity Renkler -->
+    <color name="KayitOlHintTextColor">#BFBFBF</color>
+    <color name="KayitOlBtnTextColor">#000000</color>
+
+    <!-- Main Activity Renkler -->
+    <color name="BottomViewSecilenRenk">#000000</color>
+    <color name="BottomViewSecilmeyenRenk">#989898</color>
+</resources>

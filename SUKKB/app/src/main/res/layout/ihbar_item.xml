@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#DDC706">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:id="@+id/ihbar_item_imgKart"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ihbar_item_OgrAdi"
+            android:layout_toRightOf="@id/ihbar_item_imgKart"
+            android:layout_toLeftOf="@id/ihbar_item_imgBuyut"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ihbar_item_olusturmaTarihi"
+            android:layout_toRightOf="@id/ihbar_item_imgKart"
+            android:layout_toLeftOf="@id/ihbar_item_imgBuyut"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:textSize="13sp"
+            android:textColor="#7E7E7E"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:src="@drawable/ic_buyut"
+            android:id="@+id/ihbar_item_imgBuyut"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="42dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kayit_ol_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Activity.KayitOlActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Kayıt Ol"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kayit_ol_InputAdSoyad"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/kayit_ol_EditAdSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adınızı ve Soyadınızı Giriniz"
+            android:maxLength="30"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kayit_ol_InputEposta"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/kayit_ol_EditEposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Öğrenci E-postanızı Giriniz"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kayit_ol_InputFakulte"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/kayit_ol_EditFakulte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fakültenizi Giriniz"
+            android:maxLength="50"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kayit_ol_InputBolum"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/kayit_ol_EditBolum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bölümünüzü Giriniz"
+            android:maxLength="50"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kayit_ol_InputSifre"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/kayit_ol_EditSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şifrenizi Giriniz"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#DDC706"
+        android:onClick="btnKayitOl"
+        android:text="Kayıt Ol"
+        android:textColor="@color/KayitOlBtnTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

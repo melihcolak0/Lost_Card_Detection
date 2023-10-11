@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCBCBC"
+    android:orientation="vertical"
+    tools:context=".Fragment.ProfileFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Kullanıcı Profili"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Kullanıcının Adı ve Soyadı"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/profile_fragment_editAdSoyad"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/profile_edit_bg"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:enabled="false"
+        android:layout_height="42dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Kullanıcının E-Posta Adresi"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/profile_fragment_editEposta"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/profile_edit_bg"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:enabled="false"
+        android:layout_height="42dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Kullanıcının Fakültesi"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/profile_fragment_editFakulte"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/profile_edit_bg"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:enabled="false"
+        android:layout_height="42dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Kullanıcının Bölümü"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/profile_fragment_editBolum"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/profile_edit_bg"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:enabled="false"
+        android:layout_height="42dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <ImageButton
+        android:id="@+id/profile_fragment_imgBtnAyarlar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ekle_fragment_btn_bg"
+        android:src="@drawable/ic_settings" />
+
+
+
+
+
+</LinearLayout>

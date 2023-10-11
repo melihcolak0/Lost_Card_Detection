@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_dialog_kayit_sil_bg"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"
+                android:text="Profil kaydınızı silmek istediğinizden emin misiniz? Evet'e tıkladığınızda Giriş Yap sayfasına yönlendirileceksiniz ve kaydınız yoksa tekrardan kayıt oluşturmak zorunda kalacaksınız."
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/custom_dialog_kayit_sil_btnEvet"
+                android:background="@drawable/custom_dialog_kayit_sil_btn_bg"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Evet"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/custom_dialog_kayit_sil_btnHayir"
+                android:background="@drawable/custom_dialog_kayit_sil_btn_bg"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Hayır"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

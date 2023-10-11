@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kayit_ol_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Activity.KayitOlActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bu sayfada, kayıt olurken girdiğiniz bilgileri güncelleyebilir ve tüm kaydınızı silebilirsiniz. Bilgilerinizi güncellemek için aşağıya güncellemek istediğiniz bilgilerinizi girip ''Güncelle'' butonuna basmanız yeterlidir. Tüm bilgilerinizi silmek için ise ''Sil'' butonuna basmanız yeterlidir."
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gun_sil_InputAdSoyad"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/gun_sil_EditAdSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adınızı ve Soyadınızı Giriniz"
+            android:maxLength="30"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gun_sil_InputOgrEposta"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/gun_sil_EditOgrEposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Öğrenci E-postanızı Giriniz"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gun_sil_InputFakulte"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/gun_sil_EditFakulte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fakültenizi Giriniz"
+            android:maxLength="50"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gun_sil_InputBolum"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/gun_sil_EditBolum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bölümünüzü Giriniz"
+            android:maxLength="50"
+            android:textColorHint="@color/KayitOlHintTextColor"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:text="Güncelle"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="113dp"
+            android:text="Sil"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/gun_sil_imgBtnGuncelle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ekle_fragment_btn_bg"
+            android:src="@drawable/ic_update" />
+
+        <ImageButton
+            android:id="@+id/gun_sil_imgBtnSil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/ekle_fragment_btn_bg"
+            android:src="@drawable/ic_trash" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
